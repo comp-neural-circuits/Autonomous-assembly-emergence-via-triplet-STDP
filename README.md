@@ -10,6 +10,8 @@ The code of the simulation is based on the code from the publication: Ravid Tann
 
 The graph measures are from the Brain Connectivity Toolbox (brain-connectivity-toolbox.net): Rubinov M, Sporns O (2010) NeuroImage 52:1059-69. 
 
+As a first step, you should download the Brain Connectivity Toolbox (brain-connectivity-toolbox.net).
+
 
 We provide a detailed explanation of how to generate each of the figures:
 
