@@ -1,6 +1,4 @@
 # Assembly-emergence-via-triplet-STDP
-Code for the paper "Autonomous emergence of connectivity assemblies via spike triplet interactions"
-
 
 This file explains how to use the code for the publication:
 Lisandro Montangie, Christoph Miehl, Julijana Gjorgjieva (2020) PLoS Computational Biology
