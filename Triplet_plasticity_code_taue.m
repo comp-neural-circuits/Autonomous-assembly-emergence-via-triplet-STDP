@@ -21,7 +21,7 @@ Am=0.01; % LTD window amplitude
 taup=16.8; % LTP time constant (ms)
 tauy=114; % Second LTP time constant (ms)
 taum=33.7; % LTD time constant (ms)
-etam=12; % First membrane time constant (ms)
+etam=1;
 taue2=5; % Second membrane time constant (ms)
 eps_0=1; % Normalization of EPSP kernel
 
