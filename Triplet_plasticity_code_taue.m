@@ -22,11 +22,11 @@ taup=16.8; % LTP time constant (ms)
 tauy=114; % Second LTP time constant (ms)
 taum=33.7; % LTD time constant (ms)
 etam=1;
-taue2=5; % Second membrane time constant (ms)
+taue=5; % First membrane time constant (ms)
 eps_0=1; % Normalization of EPSP kernel
 
 %% Simulation parameters
-TAUE=[5:5:50]; % Vector of membrane time constants
+TAUE2=[5:5:50]; % Vector of membrane time constants
 inh_mult=1; % Here the detailed balance of excitation and inhibition can be changed
 delta=0; % Here the balance of potentation and depression can be distrupted (ie zero-order motif non-zero)
 iterations=200000; % Number of time-steps
@@ -43,13 +43,13 @@ W_max=M*w_max;% maximum row and coloumn synaptic strength
 Psi=0.1/(M*(w_max.^2)); % heterosynaptic competition rate (values same as Neta's)
 nu=Psi*0.0005; % learning rate (values same as Neta's)
 
-Wt=cell(length(TAUE),rep);
+Wt=cell(length(TAUE2),rep);
 
 savefile='data_triplet_STDP';
 
 %% Start simulation
-for k= 1:numel(TAUE)
-    taue=TAUE(k);
+for k= 1:numel(TAUE2)
+    taue2=TAUE2(k);
     tauef=taue.*taue2./(taue+taue2);
     tauef2=taue.*taue2./(taue+2.*taue2);
     % Calculation of motif coefficients (for details see Methods and Supplementary information 2)
